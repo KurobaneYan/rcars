@@ -19,8 +19,8 @@
     "eject": "react-scripts eject",
     "lint": "./node_modules/.bin/standard",
     "lint-fix": "./node_modules/.bin/standard --fix",
-    "precommit": "yarn test -- --coverage",
-    "prepush": "yarn test -- --coverage"
+    "precommit": "yarn lint-fix && yarn test -- --coverage",
+    "prepush": "yarn lint-fix && yarn test -- --coverage"
   },
   "standard": {
     "env": {
