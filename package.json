@@ -9,6 +9,7 @@
     "standard": "^10.0.2"
   },
   "devDependencies": {
+    "husky": "^0.13.4",
     "react-scripts": "1.0.7"
   },
   "scripts": {
@@ -17,7 +18,9 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint": "./node_modules/.bin/standard",
-    "lint-fix": "./node_modules/.bin/standard --fix"
+    "lint-fix": "./node_modules/.bin/standard --fix",
+    "precommit": "yarn test",
+    "prepush": "yarn test"
   },
   "standard": {
     "env": {
