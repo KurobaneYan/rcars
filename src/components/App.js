@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Home from './Home/Home'
+import Home from './Home'
 import './App.css'
 
 export default class App extends Component {

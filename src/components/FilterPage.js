@@ -11,12 +11,12 @@ export default class FilterPage extends Component {
     return (
       <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
         <div>
-          <AppBar title="REACTIVE CARS" />
-          <div id="filterPage">
-            <div id="filteredCars">
+          <AppBar title='REACTIVE CARS' />
+          <div id='filterPage'>
+            <div id='filteredCars'>
               Cars
             </div>
-            <div id="filterForm">
+            <div id='filterForm'>
               <FilterForm />
             </div>
           </div>
