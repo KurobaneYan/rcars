@@ -1,0 +1,14 @@
+#filterPage {
+  padding: 24px;
+  display: flex;
+}
+
+#filteredCars {
+  flex: 2;
+  order: 1;
+}
+
+#filterForm {
+  flex: 1;
+  order: 2;
+}
