@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class Car extends Component {
+class CarCard extends Component {
   render () {
     return (
       <div className='CarCard'>
@@ -18,4 +18,4 @@ class Car extends Component {
   }
 }
 
-export default Car
+export default CarCard

@@ -7,13 +7,13 @@ export const setManufacturer = (value) => ({
   payload: value
 })
 
-function requestCars() {
+function requestCars () {
   return {
     type: REQUEST_CARS
   }
 }
 
-function receiveCars(json) {
+function receiveCars (json) {
   return {
     type: RECEIVE_CARS,
     cars: json.data.children.map(child => child.data),
@@ -21,7 +21,7 @@ function receiveCars(json) {
   }
 }
 
-function fetchCars() {
+function fetchCars () {
   return dispatch => {
     dispatch(requestCars())
     return fetch('http://localhost:3000/api/cars')
@@ -30,7 +30,7 @@ function fetchCars() {
   }
 }
 
-function shouldFetchCars(state) {
+function shouldFetchCars (state) {
   const cars = state.cars
   if (!cars) {
     return true
@@ -39,7 +39,7 @@ function shouldFetchCars(state) {
   }
 }
 
-export function fetchCarsIfNeeded() {
+export function fetchCarsIfNeeded () {
   return (dispatch, getState) => {
     if (shouldFetchCars(getState())) {
       return dispatch(fetchCars())

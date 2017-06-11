@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Car from './Car'
+import CarCard from './CarCard'
 
 export default class Home extends Component {
   constructor () {
@@ -22,7 +22,7 @@ export default class Home extends Component {
 
   render () {
     const cars = this.state.mostPopularCars.map((car, i) => {
-      return <Car key={i} car={car} />
+      return <CarCard key={i} car={car} />
     })
     return (
       <div className='Home'>
