@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Car from '../Car'
+import Car from './Car'
 
 export default class Home extends Component {
   constructor () {
