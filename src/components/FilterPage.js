@@ -108,7 +108,8 @@ export default class FilterPage extends Component {
 
   handleManufacturerChange (event, index, value) {
     this.setState({
-      manufacturer: value
+      manufacturer: value,
+      model: ''
     })
   }
 
@@ -188,7 +189,7 @@ export default class FilterPage extends Component {
           <AppBar title='REACTIVE CARS' />
           <div id='filterPage'>
             <div id='filteredCars'>
-              <FilteredCars cars={cars}/>
+              <FilteredCars cars={cars} />
             </div>
             <div id='filterForm'>
               <FilterForm
